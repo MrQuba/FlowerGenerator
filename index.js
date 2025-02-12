@@ -32,8 +32,8 @@ function createFlower(id, radius, petals, mid_color, petal_color){
     createCircle('flower', radius, mid_color, 50, 50)
     for(let i = 0; i < petals; i++){
     f.innerHTML += createDiv('petal' + (i+1))
-    createPetal(`petal${i+1}`, 2*(radius/petals), 2*radius, '#ff0ff0', Math.round(360/petals)*i)
+    createPetal(`petal${i+1}`, 2*(radius/petals), 2*radius, petal_color, Math.round(360/petals)*i)
     }
 }
 
-createFlower('kwiatek', 200, 15, '#ff0000')
+createFlower('kwiatek', 200, 15, '#ff0000', '#ff0ff0')
